@@ -1,0 +1,56 @@
+---Colecciones de TEST-------------Leticia Mendieta 5484123
+
+GET
+
+localhost:8080/redsanitaria/hospital
+localhost:8080/redsanitaria/servicio
+localhost:8080/redsanitaria/servicio/hospitales
+localhost:8080/redsanitaria/consulta
+localhost:8080/redsanitaria/medico
+localhost:8080/redsanitaria/historialclinico
+
+
+POST
+
+localhost:8080/redsanitaria/hospital
+
+{
+    "nombre":"Hospital de Clinicas",
+    "ciudad":"San Lorenzo",
+    "telefono":"021-111-111"
+}
+
+localhost:8080/redsanitaria/servicio
+{
+    "nombre":"Cardiologia",
+    "comentario":"Cardiologia Servicio",
+    "nrocamas":20
+}
+localhost:8080/redsanitaria/medico
+{ "dni":"12345", "nombre":"Juan" , "apellido":"Lopez", "fechanacimiento":"1992-10-10","esdirector" : "SI","codhospital":1}
+
+localhost:8080/redsanitaria/consulta
+{"diagnostico":"cardiopatia congenita",
+"tratamiento":"abc",
+"fecha":"2020-10-10",
+"hora":"2020-10-10",
+"codservicio":15,
+"codhospital":1}
+
+localhost:8080/redsanitaria/historialclinico
+{ "ci":"12345", "nombre":"Juan" , "apellido":"Lopez", "fechanacimiento":"1992-10-10"}
+
+PUT
+
+localhost:8080/redsanitaria/hospital?codhospital=1&nombre=San Martin
+localhost:8080/redsanitaria/medico?dni=12345&nombre=Martin
+
+
+
+DELETE
+
+localhost:8080/redsanitaria/hospital/1
+localhost:8080/redsanitaria/medico/3
+
+
+
